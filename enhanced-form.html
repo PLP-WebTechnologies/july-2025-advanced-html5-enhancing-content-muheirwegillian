@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Content & Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      margin-top: 20px;
+      padding: 10px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    form {
+      max-width: 600px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to the Enhanced HTML5 Page</h1>
+    <p>This page demonstrates the use of lists, tables, media, and a fully-featured form using native HTML5 capabilities.</p>
+  </header>
+
+  <section>
+    <h2>Fruits List (Unordered)</h2>
+    <ul>
+      <li>Apples</li>
+      <li>Bananas</li>
+      <li>Oranges</li>
+      <li>Mangoes</li>
+    </ul>
+
+    <h2>Steps to Make a Smoothie (Ordered)</h2>
+    <ol>
+      <li>Gather ingredients</li>
+      <li>Peel and chop fruits</li>
+      <li>Add to blender with milk/yogurt</li>
+      <li>Blend and serve</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Fruit Nutritional Information</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Fruit</th>
+          <th>Calories</th>
+          <th>Vitamin C (%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Apple</td>
+          <td>95</td>
+          <td>14%</td>
+        </tr>
+        <tr>
+          <td>Banana</td>
+          <td>105</td>
+          <td>17%</td>
+        </tr>
+        <tr>
+          <td>Orange</td>
+          <td>62</td>
+          <td>116%</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Sample Media</h2>
+
+    <h3>Image</h3>
+    <img src="images/dog.PNG" alt="dog" width="300" />
+
+    <h3>Audio</h3>
+    <audio controls>
+      <source src="audios/ada-audio.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video</h3>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/DIFXXJ4MWrA?list=RD9rJGKbHi9q0" title="ADA EHI x JOE PRAIZE - GAME CHANGER I The Official Music Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+     web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </section>
+
+  <section>
+    <h2>Contact & Feedback Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required minlength="2" placeholder="John" autocomplete="given-name" />
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required minlength="2" placeholder="Doe" autocomplete="family-name" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="example@email.com" autocomplete="email" />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="phone">Phone (Format: 123-456-7890):</label>
+        <input type="tel" id="phone" name="phone" pattern="\d{3}-\d{3}-\d{4}" required placeholder="123-456-7890" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">--Select--</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          
+        </select>
+
+        <label for="newsletter">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" checked readonly />
+
+        <label for="feedback">Your Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" placeholder="Enter your message here..."></textarea>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Mastery. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
